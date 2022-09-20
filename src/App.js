@@ -53,7 +53,8 @@ function App() {
 	//App functionalities
 
 	const clearList = () => {
-		if (window.confirm(showAlert(true, 'danger', 'empty list'))) setList([]);
+		showAlert(true, 'danger', 'empty list');
+		setList([]);
 	};
 
 	const removeItem = id => {
